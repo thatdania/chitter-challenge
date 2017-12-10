@@ -1,9 +1,20 @@
 Chitter Challenge[![Build Status](https://travis-ci.org/makersacademy/chitter-challenge.svg?branch=master)](https://travis-ci.org/makersacademy/chitter-challenge)
 =================
 
-Challenge:
+Challenge: 🐣 🐥
 -------
 This weekend's challenge was to create a  Twitter clone that will allow the users to post messages to a public stream.
+
+Approach
+-------
+
+![](images/1.PNG)
+
+Initially, I sketched out how all the pages were going to connect to each other and in what order. Making Domain Models, allowed to order the features in which I had to do them and how the user would interact with the program.
+
+I'm pretty surprised that I manage to do most of the stuff that I struggled over the week. There is a sign up page, create post, login and logout (only shows if you are logged in, smart). The posts that one post also stays there and you can write as many as you want. I also manage to create a nice aesthetic for the User.
+
+If I had more time, I would have fixed the errors such as storing the data in a database, not allowing the user to sign in if an email exist and tagging the posts with the person's name so u could see posts done by which user.
 
 How To Use:
 -------
@@ -27,20 +38,7 @@ $rackup
 ```
 $http://localhost:9292/
 ```
-
 Have fun playing around with the features :)
-
-Approach
--------
-
-![](images/1.PNG)
-
-Initially, I sketched out how all the pages were going to connect to each other and in what order. Making Domain Models, allowed to order the features in which I had to do them and how the user would interact with the program.
-
-I'm pretty surprised that I manage to do most of the stuff that I struggled over the week. There is a sign up page, create post, login and logout (only shows if you are logged in, smart). The posts that one post also stays there and you can write as many as you want. I also manage to create a nice aesthetic for the User.
-
-If I had more time, I would have fixed the errors such as storing the data in a database, not allowing the user to sign in if an email exist and tagging the posts with the person's name so u could see posts done by which user.
-
 
 Domain Models
 -------
@@ -57,12 +55,6 @@ also helps to see what the order of the pages needs to be in.
 | Chitter       | log in        | Log in to post chitter as user's chitter |
 | Chitter       | log out       | To avoid posting messages under user     |
 | Chitter, email| receive       | Receives email if tagged by a peep       |
-
-
-Resources
--------
-
-
 
 Code Review
 -----------
